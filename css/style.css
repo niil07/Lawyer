@@ -1,0 +1,463 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+/* 
+    font-family: 'Montserrat', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+ */
+
+/************************
+Header section css
+*****************************/
+
+header{
+	width: 100%;
+	padding: 20px 0px;
+}
+
+.nav-link{
+	color: #1F4F87;
+    font-weight: 600;
+    margin-left: 12px;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.3s all ease-in-out;
+}
+
+.nav-link:hover{
+	color: #F05428;
+	transition: 0.3s all ease-in-out;
+}
+
+/************************
+Banner section css
+*****************************/
+
+.banner{
+	width: 100%;
+	background-image: url(../img/banner.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 90vh;
+	position: relative;
+}
+
+.banner h1{
+	color: #fff;
+	font-size: 82px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.hg{
+	min-height: 90vh;
+	align-items: center;
+}
+
+.icon{
+	position: absolute;
+    color: #fff;
+    left: 49%;
+    transform: translateX(-51%);
+    top: 75%;
+    font-size: 20px;
+}
+
+
+/************************
+Feature section css
+*****************************/
+
+.feature{
+	width: 100%;
+	padding: 100px 0px;
+}
+
+.line{	
+	display: block;
+	height: 3px;	
+	background: #F2622C;	
+	width: 60px;
+}
+
+.feature h1{
+	color: #1F4F87;
+	font-size: 36px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 16px 0px 24px 0px;
+}
+
+.feature p{
+	color: #B0B0B1;	
+	font-size: 16px;	
+	font-weight: 400;	
+	font-family: 'Open Sans', sans-serif;
+}
+
+/************************
+About section css
+*****************************/
+
+
+.about{
+	width: 100%;
+	padding: 100px 0px;
+	background: #F7F8F8;
+	background-image: url(../img/about.png);
+	background-size: 59%;
+	background-repeat: no-repeat;
+	background-position: bottom right;
+
+}
+	
+.a-title span{
+	margin: auto;
+}
+
+.a-title{
+	text-align: center;
+}
+
+.a-title h1{
+	color: #1F4F87;
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 16px 0px 24px 0px;
+}
+
+.a-item{
+	position: relative;
+	text-align: center;
+}
+
+.a-item img{
+	width: 100%;
+}
+
+.a-item h3{
+	position: absolute;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 700;
+	font-family: 'Montserrat', sans-serif;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	transition: 0.3s all ease-in-out;
+}
+
+.a-item i{
+	position: absolute;
+    left: 47%;
+    transform: translate(-50%);
+    top: 80%;
+    color: #fff;
+    font-size: 20px;
+    opacity: 0;
+    transition: 0.5s all ease-in-out;
+}
+
+.a-item::before{
+	position: absolute;
+	content: '';
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 0%;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#28377e+1,28377e+99&0+2,1+99 */
+	background: -moz-linear-gradient(top,  rgba(40,55,126,0) 1%, rgba(40,55,126,0) 2%, rgba(40,55,126,1) 99%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(40,55,126,0) 1%,rgba(40,55,126,0) 2%,rgba(40,55,126,1) 99%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(40,55,126,0) 1%,rgba(40,55,126,0) 2%,rgba(40,55,126,1) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0028377e', endColorstr='#28377e',GradientType=0 ); /* IE6-9 */
+	transition: 0.5s all ease-in-out;
+}
+
+.a-item:hover h3{
+	opacity: 1;
+	top: 50%;
+	transition: 0.5s all ease-in-out;
+}
+
+.a-item:hover i{
+	opacity: 1;
+	left: 50%;
+	transition: 0.5s all ease-in-out;
+}
+
+.a-item:hover::before{
+	height: 100%;
+	transition: 0.5s all ease-in-out;
+}
+
+/************************
+Attorney section css
+*****************************/
+
+.attorney{
+	width: 100%;
+	padding: 100px 0px;
+	background-image: url(../img/attorney_bg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.attorney-title{
+	margin: 100px 100px 0px 0px;
+}
+
+.attorney-title span{
+	margin-top: 100px;
+}
+
+.attorney h2{
+	color: #fff;
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin: 24px 0px;
+}
+
+.attorney p{
+	color: #929DCF;
+	font-size: 16px;
+	font-weight: 400;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.attorney a{
+	text-decoration: none;
+	color: #F2622C;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	transition: 0.3s all ease-in-out;
+}
+
+.attorney a:hover{
+	color: #fff;
+	transition: 0.3s all ease-in-out;
+}
+
+.attorney_img{
+	position: relative;
+}
+
+.attorney_img::before{
+	position: absolute;
+	content: '';
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0;
+	transition: 0.4s all ease-in-out;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#28377e+1,28377e+99&0+2,1+99 */
+	background: -moz-linear-gradient(top,  rgba(40,55,126,0) 1%, rgba(40,55,126,0) 2%, rgba(40,55,126,1) 99%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(40,55,126,0) 1%,rgba(40,55,126,0) 2%,rgba(40,55,126,1) 99%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(40,55,126,0) 1%,rgba(40,55,126,0) 2%,rgba(40,55,126,1) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0028377e', endColorstr='#28377e',GradientType=0 ); /* IE6-9 */
+}
+
+.attorney_img:hover::before{
+	height: 100%;
+	transition: 0.5s all ease-in-out;
+}
+
+.attorney_img h3{
+	text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    position: absolute;
+    bottom: 10%;
+    left: 7%;
+    margin: 0px;
+    line-height: 1.5;
+    opacity: 0;
+    transition: 0.4s all ease-in-out;
+}
+
+.attorney_img:hover h3{
+	opacity: 1;
+	transition: 0.4s all ease-in-out;
+	left: 10%;
+}
+
+/************************
+Language section css
+*****************************/
+
+.language{
+	width: 100%;
+	padding: 100px 0px;
+}
+
+.l-title h2{
+	color: #28377E;
+	font-size: 36px;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	text-align: center;
+	margin: 30px 0px 60px 0px;
+}
+
+.l-item h3{
+	color: #28377E;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin: 24px 0px;
+}
+
+.l-item p{
+	color: #B0B0B1;
+	font-size: 16px;
+	font-weight: 400;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.l-item a{
+	text-decoration: none;
+	color: #F2622C;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	transition: 0.3s all ease-in-out;
+}
+
+.l-item a:hover{
+	color: #28377E;
+	transition: 0.3s all ease-in-out;
+}
+
+
+/************************
+Contact section css
+*****************************/
+
+.contact{
+	width: 100%;
+	padding: 100px 0px;
+	background: #28377E;
+}
+
+.c-content h2{
+	color: #fff;
+	font-size: 36px;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	text-align: center;
+	margin: 30px 0px 60px 0px;
+}
+
+.c-content form input{
+	color: #fff;
+	background: transparent;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	border: none;
+	border-bottom: 1px solid #4759a7;
+	border-radius: 0px;
+}
+
+.c-content form textarea{
+	color: #fff;
+	background: transparent;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	border: none;
+	border-bottom: 1px solid #4759a7;
+	border-radius: 0px;
+}
+
+.c-content form input[type='submit']{
+	display: block;
+	margin: auto;
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 14PX;
+	background: #FF6700;
+	padding: 12px 46px;
+	margin-top: 36px;
+	transition: 0.3s all ease-in-out;
+}
+
+.c-content form input[type='submit']:hover{
+	color: #28377E;
+	background: #fff;
+	transition: 0.3s all ease-in-out;
+}
+
+.c-content form input::placeholder, .c-content form textarea::placeholder{
+	color: #fff;
+}
+
+.c-content form input:focus, .c-content form textarea:focus{
+	background: transparent;
+	box-shadow: none;
+	color: #fff;
+}
+
+/************************
+Footer section css
+*****************************/
+
+footer{
+	width: 100%;
+	padding: 18px 0px;
+	background: #0C1234;
+	
+}
+
+.f-content{
+	display: flex;
+	justify-content: space-between;
+}
+
+.f-content span{
+	color: #B1B7DD;
+	font-size: 14px;
+	font-weight: 400;
+	font-family: 'Open Sans', sans-serif;
+	transition: 0.3s all ease-in-out;
+}
+
+.f-content span:hover{
+	color: #fff;
+	transition: 0.3s all ease-in-out;
+}
+
+.f-menu ul li{
+	list-style: none;
+    display: inline-block;
+    margin-left: 12px;
+}
+
+.f-menu ul li a i{
+	color: #B1B7DD;
+	transition: 0.3s all ease-in-out;
+}
+
+.f-menu ul li a i:hover{
+	color: #fff;
+	transition: 0.3s all ease-in-out;
+}
